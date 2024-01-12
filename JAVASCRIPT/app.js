@@ -29,4 +29,40 @@ function findLongestWord(param) {
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
+function findLongestWord(avengers) {
+  let longestWord = avengers[1];
+ for (let i = 1; i<avengers.length; i++) {
+ if (avengers[i].length > longestWord.length) {longestWord=avengers[i]};
+}; 
+
+return longestWord;
+}
+
+//EJERCICIO PENDIENTE
+
+/*EJERCICIOS BÁSICOS DE FUNCIONES
+Iteración 3: Calcular la suma */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------
+Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
+Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. 
+Puedes usar este array para probar tu función:
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(param) {
+  // insert code
+}
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(numbers) {
+  for (let i = 0; i<numbers.length; i++) 
+  {let totalsum = i};
+};
+
+return totalsum;*/
+
+//EJERCICIO PENDIENTE
