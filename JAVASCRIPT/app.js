@@ -57,12 +57,13 @@ function sumAll(param) {
 ----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
+let totalSum = 0;
 
-function sumAll(numbers) {
-  for (let i = 0; i<numbers.length; i++) 
-  {let totalsum = i};
+const sumAll=(array) => {
+  for (let i = 0; i<array.length; i++) 
+ {totalSum += array[i]} 
+ return totalSum
 };
 
-return totalsum;*/
 
-//EJERCICIO PENDIENTE
+console.log(sumAll(numbers));
