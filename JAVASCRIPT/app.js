@@ -31,16 +31,16 @@ function findLongestWord(param) {
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
-function findLongestWord(avengers) {
-  let longestWord = avengers[1];
- for (let i = 1; i<avengers.length; i++) {
- if (avengers[i].length > longestWord.length) {longestWord=avengers[i]};
+const findLongestWord=(array) => {
+  let longestWord = "";
+ for (let i = 0; i<array.length; i++) {
+ if (array[i].length > longestWord.length) {longestWord=array[i]};
 }; 
 
 return longestWord;
 }
 
-//EJERCICIO PENDIENTE
+console.log(findLongestWord(avengers))
 
 /*EJERCICIOS BÁSICOS DE FUNCIONES
 Iteración 3: Calcular la suma */
@@ -56,7 +56,7 @@ function sumAll(param) {
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*const numbers = [1, 2, 3, 5, 45, 37, 58];
+const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumAll(numbers) {
   for (let i = 0; i<numbers.length; i++) 
