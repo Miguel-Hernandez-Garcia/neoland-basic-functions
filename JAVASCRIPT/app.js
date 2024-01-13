@@ -81,15 +81,36 @@ function average(param) {
 --------------------------------------------------------------------------------------------------------*/
 
 const numbersAverage = [12, 21, 38, 5, 45, 37, 6];
-let totalSumAverage = 0;
 
 const average=(array) => {
+ let totalSumAverage = 0;
  for (let i = 0; i<array.length; i++)
  {totalSumAverage += array[i]}
-  return totalSumAverage/array.lenght;
+  return totalSumAverage/array.length;
 }
 
 let resultNumbersAverage = average(numbersAverage);
 console.log("🚀 ~ resultNumbersAverage:", resultNumbersAverage);
 
-//EJERCICIO PENDIENTE - RECIBO UN NaN en console.log
+
+/*EJERCICIOS BÁSICOS DE FUNCIONES
+Iteración 5: Calcular promedio de strings */
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Crea una función que reciba por parámetro un array y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume. Puedes usar este array para probar tu función:
+
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+function averageWord(param) {
+  // insert code
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+const averageWord=(array) => {
+  let averageWordSum = 0;
+for (let i = 0; i<array.length; i++)
+{if (averageWordSum = )}
+}
+
+const resultAverageWord = averageWord(mixedElements);
+console.log("🚀 ~ resultAverageWord:", resultAverageWord); */
