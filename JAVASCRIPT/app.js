@@ -104,13 +104,16 @@ function averageWord(param) {
   // insert code
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 
 const averageWord=(array) => {
   let averageWordSum = 0;
-for (let i = 0; i<array.length; i++)
-{if (averageWordSum = )}
+for (const entry of array)
+{averageWordSum += entry.length}
+return averageWordSum
 }
 
 const resultAverageWord = averageWord(mixedElements);
-console.log("🚀 ~ resultAverageWord:", resultAverageWord); */
+console.log("🚀 ~ resultAverageWord:", resultAverageWord);
+
+//EJERCICIO PENDIENTE - RECIBO UN error de NaN 
