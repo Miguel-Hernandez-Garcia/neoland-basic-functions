@@ -40,7 +40,8 @@ const findLongestWord=(array) => {
 return longestWord;
 }
 
-console.log(findLongestWord(avengers))
+let resultLongestWord = findLongestWord(avengers);
+console.log(resultLongestWord)
 
 /*EJERCICIOS BÁSICOS DE FUNCIONES
 Iteración 3: Calcular la suma */
@@ -65,5 +66,30 @@ const sumAll=(array) => {
  return totalSum
 };
 
+let resultSumAllNumbers = sumAll(numbers);
+console.log(resultSumAllNumbers);
 
-console.log(sumAll(numbers));
+/*EJERCICIOS BÁSICOS DE FUNCIONES
+Iteración 4: Calcular el promedio */
+
+/*------------------------------------------------------------------------------------------------------
+Calcular un promedio es una tarea extremadamente común. Puedes usar este array para probar tu función:
+const numbers = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+  // insert code
+}
+--------------------------------------------------------------------------------------------------------*/
+
+const numbersAverage = [12, 21, 38, 5, 45, 37, 6];
+let totalSumAverage = 0;
+
+const average=(array) => {
+ for (let i = 0; i<array.length; i++)
+ {totalSumAverage += array[i]}
+  return totalSumAverage/array.lenght;
+}
+
+let resultNumbersAverage = average(numbersAverage);
+console.log("🚀 ~ resultNumbersAverage:", resultNumbersAverage);
+
+//EJERCICIO PENDIENTE - RECIBO UN NaN en console.log
