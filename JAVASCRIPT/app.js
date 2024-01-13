@@ -254,9 +254,12 @@ const counterWords = [
   'code'
 ];
 
-const repeatCounter=(array) => {
- 
-
+const repeatCounter=(array, value) => {
+ let numberOfRepetitions = 0;
+ for (i = 0; i<array.length; i++) {
+ if (array[i]==value) {numberOfRepetitions++}
+ }
+return numberOfRepetitions
 }
 
 const resultRepeatCounter = repeatCounter(counterWords, `code`);
