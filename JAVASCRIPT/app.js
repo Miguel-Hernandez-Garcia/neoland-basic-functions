@@ -107,16 +107,20 @@ function averageWord(param) {
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 
 const averageWord=(array) => {
-  let averageWordSum = 0;
-for (const entry of array)
-{averageWordSum += entry.length}
-return averageWordSum
+ let averageWordSum = 0;
+ let averageWordSum2 = 0;
+for (let i = 0; i<array.length; i++) {
+if (typeof array[i] === "string") {
+averageWordSum += array[i].length
+ } else if (typeof array[i] === "number") {
+averageWordSum2 += array[i]
+}}
+return `La suma de strings es ${averageWordSum} y la suma de números es ${averageWordSum2}`
 }
 
 const resultAverageWord = averageWord(mixedElements);
 console.log("🚀 ~ resultAverageWord:", resultAverageWord);
 
-//EJERCICIO PENDIENTE - RECIBO UN error de NaN 
 
 /*EJERCICIOS BÁSICOS DE FUNCIONES
 Iteración 6: Valores únicos */
@@ -156,20 +160,19 @@ const duplicates = [
 ];
 
 const removeDuplicates=(array) => {
-  const uniqueElements = [];
+  let uniqueElements = [];
  for (i = 0; i<array.length; i++) {
- const listElement = array[i]; 
- if (uniqueElements.indexOf(listElement) <1) 
-  {uniqueElements.push(listElement);}
 
- return uniqueElements
+ if (!uniqueElements.includes(array[i])) 
+  {uniqueElements.push(array[i]);}
+
  }
+ return uniqueElements
 }
 
 const resultRemoveDuplicates = removeDuplicates(duplicates);
 console.log("🚀 ~ resultRemoveDuplicates:", resultRemoveDuplicates);
 
-//EJERCICIO PENDIENTE: Solo recibo sushi en lugar de los no duplicados.
 
 /*EJERCICIOS BÁSICOS DE FUNCIONES
 Iteración 7: Buscador de nombres */
